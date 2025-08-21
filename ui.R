@@ -6,4 +6,6 @@ ui <- fluidPage(surveyOutput(
     survey_title = "Preferred problem solving styles",
     survey_description = "There are 48 questions"))
 
+actionButton("submit", "Submit")
+
 ui

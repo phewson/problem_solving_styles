@@ -6,6 +6,10 @@ library(dplyr)
 library(tibble)
 library(purrr)
 
+required_packages <- c("shiny", "shinysurveys", "ggplot2", "dplyr", "tibble", "purrr", "stringr")
+invisible(lapply(required_packages, require, character.only = TRUE))
+
+
 LIKERT5 <- c("Strongly agree", "Agree", "Neither agree nor disagree",
              "Disagree", "Strongly disagree")
 
