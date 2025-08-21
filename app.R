@@ -1,3 +1,4 @@
+library(shiny)
 source("global.R")
 if (file.exists("ui.R") && file.exists("server.R")) {
   shinyApp(

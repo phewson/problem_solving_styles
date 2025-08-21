@@ -8,8 +8,9 @@ let
         stringr
         shinysurveys
         RColorBrewer
-	dplyr
-	tibble
+        dplyr
+        tibble
+        renv
         ggplot2;
     }; 
 
