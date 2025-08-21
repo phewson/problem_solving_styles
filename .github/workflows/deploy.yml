@@ -36,10 +36,11 @@ jobs:
 
       - name: Install app dependencies
         run: |
-          install.packages(c(
+          Rscript -e 'install.packages(c(
             "shiny", "dplyr", "ggplot2", "purrr",
             "shinysurveys", "tibble", "stringr", "rsconnect"
-          ))
+          ))'
+
 
       - name: Deploy app to shinyapps.io
         env:
