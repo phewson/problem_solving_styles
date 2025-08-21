@@ -34,6 +34,10 @@ jobs:
           remotes::install_cran("rsconnect")
           remotes::install_github("jdtrat/shinysurveys")
         shell: Rscript {0}
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+
 
       - name: Install app dependencies
         run: |
