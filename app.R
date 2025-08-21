@@ -1,4 +1,11 @@
 library(shiny)
+library(dplyr)
+library(ggplot2)
+library(purrr)
+library(shinysurveys)
+library(tibble)
+library(stringr)
+
 source("global.R")
 if (file.exists("ui.R") && file.exists("server.R")) {
   shinyApp(
